@@ -44,3 +44,9 @@
     background: #eee;
     padding: 10px;
 }
+.menu-bar{
+    cursor: pointer;
+}
+.abrir{
+    transform: translateX(250px);
+}
