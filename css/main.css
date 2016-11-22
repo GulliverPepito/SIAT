@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+header, img{
+  padding-left: 15px;
+  padding-top: 5px;
+}
+.contenedor a{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0 10px;
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-style: bold;
+}
+.azul{
+  color: #0074D9;
+}
+.fondo{
+  background-image: url(../imagenes/pencil.jpeg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.redondear{
+	border-radius: 5px;
+}
+.centrar{
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  margin-top: 10%;
+}
+.contenedor{
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+}
+.cabecera{
+   width: 100%;
+   height: 50px;
+   display: block;
+}
+.blanco{
+  color: #FFFFFF;
+}
+.pie{
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  position: fixed;
+}
+.input,  input[type=text], input[type=password]{
+  padding: 0 10px;
+  margin-top: 20px;
+  width: 400px;
+  height: 40px;
+  text-shadow: 1px 1px 1px black;
+  background: rgba(255, 255, 255, 100);
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background: rgba(255,255,255,50);
+  outline: 0;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-left: 30px;
+}
+.inline-block{
+  display: inline-block;
+  position: relative;
+  top: 1px;
+}
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.dosis{
+  font-family: 'Dosis', sans-serif;
+}
+.droid{
+  font-family: 'Droid Sans', sans-serif;
+}
+.patua{
+  font-family: 'Patua One', cursive;
+}
+.radiobuttons input[type=radio]{
+  display: none;
+}
+.radiobuttons label{
+  color: #0074D9;
+  padding: 5px 15px;
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
+  border-radius: 3px;
+  cursor: pointer; 
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -transition: all 0.3s ease;  
+}
+.radiobuttons label:hover{
+  /*background: rgba(0,115,217,0.2);*/
+  background: rgba(255,255,255,0.7);
+}
+.radiobuttons label:before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: none;
+  /*border: 3px solid #0074D9;*/
+  border-radius: 50%;
+  position: absolute;
+  /*left: 17px;*/
+  top: 4px;
+}
+.radiobuttons input[type=radio]:checked + label{
+  padding: 5px 15px;
+  background: #0074D9;
+  border-radius: 2px;
+  color: #fff;
+}
+.radiobuttons input[type=radio]:checked + label:before{
+  display: none;
+}
+.cabecera h1{
+  float: left;
+  text-align: center;
+  padding: 5px;
+  padding-top: 3px;
+  margin-top: 25px;
+  margin-left: 33%;
+  font-size: 4em;
+  letter-spacing: 2px;
+}
+.pie p{
+  font-size: 1em;
+}
