@@ -1,6 +1,14 @@
 .cabecera{
-	height: 50px;
+	height: 45px;
 	width: 100%;
+}
+
+.cabecera img{
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-right: 5px;
+    width: 100%
+    height: auto;
 }
 .azul{
 	background: #2980b9;
@@ -21,13 +29,17 @@
     padding: 0;
     margin: 0;
 }
+.azul-silver{
+    /*background: #2980b9;*/
+    background: #0074D9;
+}
 .sidebar ul a{
     display: block;
     padding: 10px;
     font-size: 1em;
     color: #fff;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
 }
 .sidebar li{
     outline: 1px solid #2a2a2a;
@@ -49,6 +61,7 @@
 }
 .abrir{
     transform: translateX(20%);
+    transition: 0.3s;
 }
 .btn-nav{
     width: 100%;
@@ -58,6 +71,7 @@
     padding-top: 5%;
     margin-left: 200px;
     position: relative;
+
 }
 .btn-nav, ul li{
     list-style: none;
@@ -65,18 +79,38 @@
 .btn-nav ul li a{
     text-decoration: none;
     color: #fff;
+    font-size: 2em;
+    padding-left: 10px;
 }
 .botones li{
-    width: 200px;
-    height: 100px;
-    background: #007D49;
+    width: 300px;
+    height: 150px;
+    background: #333;
     display: inline-block;
     padding: 10px;
+    padding-top: 35px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+}
+.botones li:hover{
+    background: #0074D9;
 }
 .float{
     float: left;
+}
+.home-logo{
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.user{
+    width: auto;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
 }
