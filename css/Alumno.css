@@ -1,8 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .cabecera{
 	height: 45px;
 	width: 100%;
+    display: block;
 }
-
 .cabecera img{
     padding-left: 5px;
     padding-top: 1px;
@@ -14,15 +18,22 @@
 	background: #2980b9;
 }
 .sidebar{
-	position: absolute;
 	width: 20%;
 	height: 100%;
+    position: absolute;
+    left: -100%;
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.60);
 }
 .negro-opaco{
     background: #2a2a2a;
 }
 .negro{
-    background: #333;
+    background: /*#333#424d69#1e757b*/#005691;
+}
+.blanco-cremoso{
+    background: #f2ffdf; 
 }
 .sidebar ul{
     list-style: none;
@@ -42,34 +53,26 @@
     text-align: left;
 }
 .sidebar li{
-    outline: 1px solid #2a2a2a;
+    border-bottom: 1px solid #fff;
     transition: border 0.3s;
 }
 .sidebar li:hover{
-    background: #444;
+    background: #004a7c;
     border-left: 5px solid #fff;
-}
-.contenido{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: #eee;
-    padding: 10px;
 }
 .menu-bar{
     cursor: pointer;
 }
 .abrir{
-    transform: translateX(20%);
+    margin-left: 20%;
     transition: 0.3s;
 }
 .btn-nav{
     width: 100%;
     height: 400px;
     margin:  50px, 20px;
-    padding-left: 50px;
     padding-top: 5%;
-    margin-left: 200px;
+    margin-left: 300px;
     position: relative;
 
 }
@@ -77,26 +80,40 @@
     list-style: none;
 }
 .btn-nav ul li a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #fff;
     text-decoration: none;
-    color: #fff;
-    font-size: 2em;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
     padding-left: 10px;
+    padding-top: 10px;
 }
 .botones li{
-    width: 300px;
+    width: 250px;
     height: 150px;
     background: #333;
     display: inline-block;
-    padding: 10px;
-    padding-top: 35px;
+    padding-top: 10px;
     margin: 10px;
+    margin-right: 70px;
     border-radius: 6px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
 }
 .botones li:hover{
-    background: #0074D9;
+    background: #cdcdcd;
+}
+.botones li img{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 23px;
 }
 .float{
     float: left;
