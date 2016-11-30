@@ -6,6 +6,7 @@
 	height: 45px;
 	width: 100%;
     display: block;
+    border-bottom: 1px solid #eee;
 }
 .cabecera img{
     padding-left: 5px;
@@ -13,6 +14,16 @@
     padding-right: 5px;
     width: 100%
     height: auto;
+}
+.cabecera h1{
+    padding-top: 1px;
+    margin-top: 0;
+    display: inline-block;
+    float: left;
+    position: absolute;
+    font-size: 30px;
+    overflow: hidden;
+    text-align: center;
 }
 .azul{
 	background: #2980b9;
@@ -22,18 +33,19 @@
 	height: 100%;
     position: absolute;
     left: -100%;
-    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.60);
+    z-index: 100;
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
 }
 .negro-opaco{
     background: #2a2a2a;
 }
 .negro{
-    background: /*#333#424d69#1e757b*/#005691;
+    background: /*#333#424d69#1e757b#005691*/#fff;
 }
 .blanco-cremoso{
-    background: #f2ffdf; 
+    background: /*#f2ffdf*/#fff; 
 }
 .sidebar ul{
     list-style: none;
@@ -48,20 +60,20 @@
     display: block;
     padding: 10px;
     font-size: 1em;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     text-align: left;
 }
 .sidebar li{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #eee;
     transition: border 0.3s;
 }
 .sidebar li:hover{
-    background: #004a7c;
-    border-left: 5px solid #fff;
+    border-left: 5px solid #000;
 }
 .menu-bar{
     cursor: pointer;
+    position: relative;
 }
 .abrir{
     margin-left: 20%;
@@ -71,57 +83,54 @@
     width: 100%;
     height: 400px;
     margin:  50px, 20px;
-    padding-top: 5%;
-    margin-left: 300px;
+    padding-top: 3%;
+    margin-left: 200px;
     position: relative;
-
 }
 .btn-nav, ul li{
     list-style: none;
 }
+
 .btn-nav ul li a{
     display: block;
     width: 100%;
     height: 50px;
-    background: #fff;
-    text-decoration: none;
     text-align: center;
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .botones li{
-    width: 250px;
-    height: 150px;
-    background: #333;
+    width: 380px;
+    height: 300px;
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 5px;
+    /*background: #eee;*/
     margin: 10px;
-    margin-right: 70px;
-    border-radius: 6px;
+    margin-top: 0px;
+    margin-right: 40px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
-}
-.botones li:hover{
-    background: #cdcdcd;
+    /*
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
+    */
 }
 .botones li img{
     margin: 0 auto;
-    display: block;
-    margin-bottom: 23px;
+    display: block;  
 }
 .float{
     float: left;
 }
 .home-logo{
     width: 40px;
-    height: 40px;
+    height: 50px;
     float: right;
+    display: block;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -130,4 +139,26 @@
     height: 200px;
     margin: 10px;
     padding: 10px;
+}
+
+@media screen and (max-width:800px ){
+    .sidebar{
+     width: 80%;
+     height: 100%;
+    position: fixed;
+    z-index: 100;
+        left: -100%;
+        -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+        box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+    }
+    .btn-nav{
+    width: 100%;
+    height: 400px;
+    margin:  50px, 20px;
+    padding-top: 3%;
+    margin-left: 10%;
+    position: relative;
+    }
+
 }
