@@ -85,7 +85,7 @@
     height: 400px;
     margin:  50px, 20px;
     padding-top: 3%;
-    margin-left: 200px;
+    margin-left: 250px;
     position: relative;
 }
 .btn-nav, ul li{
@@ -93,21 +93,27 @@
 }
 
 .btn-nav ul li a{
-    display: block;
+    display: inline-block;
+    position: absolute;
     width: 100%;
     height: 50px;
-    text-align: center;
-    color: #000;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
     font-size: 25px;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding-left: 5px;
+    padding-top: 30px;
 }
+.botones li:hover{
+    background: #2a363b;
+}
+/*
 .botones li{
     width: 380px;
     height: 300px;
     display: inline-block;
     padding-top: 5px;
-    /*background: #eee;*/
+    background: #eee;
     margin: 10px;
     margin-top: 0px;
     margin-right: 40px;
@@ -118,11 +124,27 @@
     -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
     -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
     box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
-    */
+
+}*/
+.botones li{
+    width: 320px;
+    height: 170px;
+    background: #2e94b9;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 35px;
+    margin: 10px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
 }
 .botones li img{
-    margin: 0 auto;
-    display: block;  
+    width: 120px;
+    height: 80px;  
 }
 .float{
     float: left;
