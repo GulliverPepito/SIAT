@@ -155,11 +155,48 @@
     }
     .btn-nav{
     width: 100%;
+    max-width: 600px;
     height: 400px;
     margin-top: 20px;
     padding-top: 3%;
     margin-left: 0;
     position: relative;
     }
+    .cabecera h1{
+    padding-top: 1px;
+    margin-top: 0;
+    display: inline-block;
+    float: left;
+    margin-left: 20%;
+    position: absolute;
+    font-size: 30px;
+    overflow: hidden;
+    text-align: center;
+    }
 
+} 
+@media screen and (max-width: 500px){
+    .botones li{
+    width: 280px;
+    height: 200px;
+    display: inline-block;
+    padding-top: 5px;
+    /*background: #eee;*/
+    margin: 10px;
+    margin-top: 0px;
+    margin-right: 40px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    /*
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
+    */
+    }
+    .botones li img{
+        width: 200px;
+        height: 150px;
+    }
+    
 }
