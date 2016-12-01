@@ -1,0 +1,196 @@
+.cabecera{
+	height: 45px;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.cabecera img{
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-right: 5px;
+    width: 100%
+    height: auto;
+}
+.cabecera h1{
+    padding-top: 1px;
+    margin-top: 0;
+    display: inline-block;
+    float: left;
+    position: absolute;
+    font-size: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.azul{
+	background: #2980b9;
+}
+.sidebar{
+	width: 20%;
+    height: 100%;
+    position: absolute;
+    left: -100%;
+    z-index: 100;
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+}
+.negro-opaco{
+    background: #2a2a2a;
+}
+.negro{
+    background: #fff;
+}
+.azulito{
+    background: #2e94b9;
+}
+.blanco-cremoso{
+    background: #fff;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.azul-silver{
+    /*background: #2980b9;*/
+    background: #0074D9;
+}
+.sidebar ul a{
+     display: block;
+    padding: 10px;
+    font-size: 1em;
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+}
+.sidebar li{
+    outline: 1px solid #2a2a2a;
+    transition: border 0.3s;
+}
+.sidebar li:hover{
+   border-bottom: 1px solid #eee;
+    transition: border 0.3s;
+}
+.color-letra{
+    color: #333;
+    top: 20px;
+    left: 300px;
+   text-align: center;
+    position: absolute;
+}
+.menu-bar{
+    cursor: pointer;
+    position: relative;
+}
+.btn-nav{
+    width: 100%;
+    height: 400px;
+    margin:  50px, 20px;
+    padding-left: 50px;
+    padding-top: 5%;
+    margin-left: 200px;
+    position: relative;
+
+}
+.btn-nav, ul li{
+    list-style: none;
+}
+.btn-nav ul li a{
+   display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.botones li{
+    width: 300px;
+    height: 150px;
+    background: #2e94b9;
+    display: inline-block;
+    padding: 10px;
+    padding-top: 35px;
+    margin: 10px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.75);
+}
+.botones li:hover{
+    background: #2a363b;
+}
+.float{
+    float: left;
+}
+.home-logo{
+   width: 40px;
+    height: 50px;
+    float: right;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.user{
+    width: auto;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+}
+.combo {
+  position: relative;
+  border: 2px solid #2e94b9;
+  top: 20px;
+  left: 244px;
+  width: 190px;
+  overflow: hidden;
+  background-color: #fff;
+}
+  .combo:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 0;
+    height: 0;
+    border-style: groove;
+    border-width: 10px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .combo select {
+    padding: 10px 8px;
+    width: 160%;
+    border: none;
+    box-shadow: none;
+    background-color: #333;
+  }
+
+@media screen and (max-width:800px ){
+    .sidebar{
+     width: 80%;
+     height: 100%;
+    position: fixed;
+    z-index: 100;
+        left: -100%;
+        -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+        -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+        box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+    }
+    .btn-nav{
+    width: 100%;
+    height: 400px;
+    margin:  50px, 20px;
+    padding-top: 3%;
+    margin-left: 10%;
+    position: relative;
+    }
+
+}
