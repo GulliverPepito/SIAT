@@ -83,6 +83,7 @@ input[type=text]:focus, input[type=password]:focus {
   position: relative;
   top: 1px;
 }
+/* Tipos de Letras */
 .roboto{
   font-family: 'Roboto', sans-serif;
 }
@@ -95,6 +96,8 @@ input[type=text]:focus, input[type=password]:focus {
 .patua{
   font-family: 'Patua One', cursive;
 }
+/********************************/
+/*Estilos para los Radios Buttons*/
 .radiobuttons input[type=radio]{
   display: none;
 }
@@ -135,6 +138,7 @@ input[type=text]:focus, input[type=password]:focus {
 .radiobuttons input[type=radio]:checked + label:before{
   display: none;
 }
+/**********************/
 .cabecera h1{
   float: left;
   text-align: center;
@@ -148,7 +152,8 @@ input[type=text]:focus, input[type=password]:focus {
 .pie p{
   font-size: 1em;
 }
-
+/*Estilos que tomara cuando la pantalla sea menor a 800px*/
+/* Codigo para hacer responsive design */
 @media screen and (max-width:800px ){
   .cabecera h1{
   float: left;
@@ -156,13 +161,20 @@ input[type=text]:focus, input[type=password]:focus {
   padding: 5px;
   padding-top: 1px;
   margin-top: 25px;
-  margin-left: 5%;
-  font-size: 4em;
+  margin-left: 30%;
+  font-size: 3em;
   letter-spacing: 2px;
   }
   .contenedor{
     width: 100%;
     height: 150px;
+  }
+  
+}
+/*Estilos que tomara cuando la pantalla sea menor 500px*/
+@media screen and (max-width:500px){
+  .cabecera h1{
+    margin-left: 5%;
   }
   .input,  input[type=text], input[type=password]{
   padding: 0 10px;
@@ -175,8 +187,8 @@ input[type=text]:focus, input[type=password]:focus {
   border-radius: 5px;
   }
 .logo{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   float: left;
   margin-left: 10px;
   }

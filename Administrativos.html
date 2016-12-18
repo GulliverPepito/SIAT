@@ -4,7 +4,7 @@
 	<title>Inicio</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/Login.css">
-	<link rel="stylesheet" href="css/Alumno.css">
+	<link rel="stylesheet" href="css/maestro.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis:700|Droid+Sans:700|Patua+One|Roboto:700" rel="stylesheet">
 	<script src="jquery.js"></script>
@@ -12,17 +12,15 @@
 </head>
 <body class="blanco-cremoso">
 	<header class="cabecera negro">
-		<div class="">
-			
-			<img src="imagenes/menu.png" class="menu-bar">
-			<h1 class="patua">SIAT</h1>
-			<!--<img src="imagenes/SIATLogo.png" class="home-logo img-responsive">-->
-			<img src="imagenes/homepage.png" class="home-logo img-responsive">
-
-		</div>
+		<img src="imagenes/menu.png" class="menu-bar">
+		<h1 class="patua">SIAT</h1>
+		<!--<img src="imagenes/SIATLogo.png" class="home-logo img-responsive">-->
+		<img src="imagenes/homepage.png" class="home-logo img-responsive">
+	</header>
+	<section>	
 		<div class="sidebar negro">
 			<nav>
-				<ul>
+				<ul class="blanco">
 					<img src="imagenes/man-user.png" class="user">
 					<li><a href="">
 					<img src="imagenes/user.png">
@@ -34,30 +32,35 @@
 					<img src="imagenes/help.png">
 					Ayuda</a></li>
 					<li><a href="">
-					<img src="imagenes/icon.png">
+					<img src="imagenes/power.png">
 					Cerrar Sesion</a></li>
 				</ul>
 			</nav>	
 		</div>
-	</header>
-	<section>	
-		<div class="">
+		<div>
 			<div class="btn-nav">
 				<nav>
-					<ul class="botones blanco patua">
+					<ul class="botones blanco roboto">
+						<!--<PRIMERA LINEA DE BOTONES>-->
 						<div>
-						<li>
-						<img src="imagenes/calendarioIcon.png"> 
-						<a href="">Horarios</a></li>
-						<li class="float">
-						<img src="imagenes/CalificacionesLogo.png">
-						<a href="">Calificaciones</a></li>
+						<li class="negro"><a href="">
+						<img src="imagenes/horario2.png"> 
+						Horarios</a></li>
+						<li class="float"><a href="disponibilidad.html">
+						<img src="imagenes/plus.png">
+						Altas</a></li>
+
+						<li class="float"><a href="">
+						<img src="imagenes/materias1.png">
+						Relaciones</a></li>
 						</div>
+						<!--<SEGUNDA LINEA DE BOTONES>-->
 						<div>
-						<li>
-						<img src="imagenes/TalleresIcon.png">
-						<a href="">Talleres</a></li>
-						<!--<li class="float"><a href=""></a></li>-->
+						<li class="float"><a href="">
+						<img src="imagenes/calificaciones2.png">
+						Calificaciones</a></li>
+						<!--<li class="float"><a href=""></a></li>>-->
+
 						</div>
 					</ul>
 				</nav>

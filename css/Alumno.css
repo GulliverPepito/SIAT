@@ -28,33 +28,36 @@
 .azul{
 	background: #2980b9;
 }
-.sidebar{
-	width: 20%;
-	height: 100%;
-    position: absolute;
-    left: -100%;
-    z-index: 100;
-    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
-    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
-    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
-}
+
 .negro-opaco{
     background: #2a2a2a;
 }
-.negro{
+.blanco{
     background: /*#333#424d69#1e757b#005691*/#fff;
 }
 .blanco-cremoso{
     background: /*#f2ffdf*/#fff; 
 }
+
+.azul-silver{
+    /*background: #2980b9;*/
+    background: #0074D9;
+}
+/*Estilos para la barra lateral*/
+.sidebar{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: -100%; /* Es menos 100 por que se esconde hasta que se aprieta menu-bar*/
+    z-index: 100;
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.30);
+}
 .sidebar ul{
     list-style: none;
     padding: 0;
     margin: 0;
-}
-.azul-silver{
-    /*background: #2980b9;*/
-    background: #0074D9;
 }
 .sidebar ul a{
     display: block;
@@ -70,15 +73,14 @@
 }
 .sidebar li:hover{
     border-left: 5px solid #0074D9;
+    background: #eee;
 }
+/******************************/
 .menu-bar{
     cursor: pointer;
     position: relative;
 }
-.abrir{
-    margin-left: 20%;
-    transition: 0.3s;
-}
+/*Botones de Navegacion*/
 .btn-nav{
     width: 100%;
     max-width: 1000px;
@@ -107,25 +109,6 @@
 .botones li:hover{
     background: #2a363b;
 }
-/*
-.botones li{
-    width: 380px;
-    height: 300px;
-    display: inline-block;
-    padding-top: 5px;
-    background: #eee;
-    margin: 10px;
-    margin-top: 0px;
-    margin-right: 40px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    /*
-    -webkit-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
-    -moz-box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
-    box-shadow: 10px 10px 8px 0px rgba(0,0,0,0.40);
-
-}*/
 .botones li{
     width: 320px;
     height: 170px;
