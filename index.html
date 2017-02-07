@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>SIAT</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/Login.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/sweetalert.css">
+	 <link href="https://fonts.googleapis.com/css?family=Dosis:700|Droid+Sans:700|Patua+One|Roboto:700" rel="stylesheet">
+	 <script src="jquery.js"></script>
+</head>
+<body class="fondo">
+	<header class="cabecera blanco inline-block">
+		<img src="imagenes/SIATLogo.png" class="logo img-responsive">
+		<h1 class="patua inline-block centrar ">SIAT</h1>
+	</header>
+	<section>
+	<div class="contenedor  centrar radiobuttons roboto">
+		<form method="post" action="login.php">
+			<input type="radio" name="tipousuario" id="alumno" value="alumno">
+			<label for="alumno" name="tipousuario">Alumno</label>
+			<input type="radio" name="tipousuario" id="Maestro" value="maestro">
+			<label for="Maestro">Maestro</label>
+			<input type="radio" name="tipousuario" id="Administrativo" value="administrativo">
+			<label for="Administrativo">Administrativo</label>
+		<!--</form>
+		<form action="login.php" method="post" id="login">-->
+            <br></br>
+				<input type="text" id="usuario" name="usuario" placeholder="No.Control" required><br><br>
+				<input type="password" id="contra" name="contrasenia" placeholder="Contraseña" required><br><br>
+            <input type="button" name="IniciarSesion" class="btn btn-primary" value="Iniciar Sesion" onclick="javascript:Enviar();">
+		</form>
+		<p><a href="#" class="roboto">Olvide Contraseña</a></p>
+	</div>
+	</section>
+	<footer class="pie centrar blanco roboto">
+		<p>Todos los Derechos Reservados para SIAT&copy; 2016-2017<p>
+	</footer>
+</body>
+<script src="js/sweetalert.min.js"></script>
+<script type="text/javascript">
+    function Enviar(){
+        var usuario = document.getElementById("usuario").value;
+        var contra = document.getElementById("contra").value;
+        var tipousuario = $('input:radio[name=tipousuario]:checked').val();
+        $.ajax({
+            type: 'POST',
+            url: 'login.php',
+            dataType: 'json',
+            data:{usuario:usuario,contrasenia:contra,
+                  tipousuario:tipousuario}
+        }).done(function(respuesta){
+            if(respuesta==1){
+                if(tipousuario=="alumno"){
+                    location.href="Alumno.html";
+                }else if(tipousuario=="maestro"){
+                    location.href="Maestros.html";
+                }else if(tipousuario=="administrativo"){
+                    location.href="Administrativos.html";
+                }
+            }else{
+                swal("Todo mal");
+            }
+        })
+    }
+</script>
+</html>

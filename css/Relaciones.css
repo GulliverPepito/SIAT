@@ -1,0 +1,59 @@
+.contenido{
+	width: 100%;
+	max-width: 900px;
+	padding: 20px;
+}
+h1{
+	text-align: center;
+}
+.contenido{
+	display: block;
+	width: 100%;
+	max-width: 1000px;
+	height: auto;
+	padding: 80px;
+	padding-top: 10px;
+}
+.contenido form input[type="text"]{
+	padding: 0 5px;
+	margin-right: 20px;
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,.3)
+}
+.contenido  form label{
+	margin-left: 10px;
+	display: inline-block;
+	padding-left: 10px;
+}
+.contenido .button{
+	width: 80px;
+	height: 30px;
+	border-radius: 3px;
+	border: 0;
+}
+.btn-margin{
+	margin-left: 20px;
+}
+.clases h1{
+	margin-bottom: 30px;
+	margin-left: 150px;
+}
+@media screen and (max-width:980px){
+    .contenido{
+        max-width: 600px;
+    }
+   .contenido form input[type="text"]{
+        padding: 0 5px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid rgba(0,0,0,.3)
+    } 
+    .contenido .button{
+        margin-left: 20px;
+    }
+}
